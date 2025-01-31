@@ -3,6 +3,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -30,7 +31,6 @@ body {
     flex-grow: 1;
     display: flex;
     justify-content: space-between;
-    background-color: rgb(224, 18, 18);
 }
 
 .sidebar {
@@ -64,4 +64,32 @@ body {
     transform: translateY(-100%);
     margin-top: 10px;
     font-size: 1.3rem;
+}
+
+
+/* =============== Responsiveness =============== */
+
+@media screen and (max-width: 768px) {
+    
+.link {
+    font-size: 1rem;
+}
+
+.subLink {
+    margin-top: 8px;
+    font-size: 1rem;
+}
+
+}
+
+@media screen and (max-width: 400px) {
+    
+.link {
+    font-size: 0.9rem;
+}
+
+.subLink {
+    font-size: 0.9rem;
+}
+
 }
